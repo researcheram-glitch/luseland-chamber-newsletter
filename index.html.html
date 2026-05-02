@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chamber Notes | Luseland & District Chamber of Commerce</title>
+  <meta name="description" content="October 2025 - April 2026 newsletter from the Luseland & District Chamber of Commerce.">
+  <style>
+    :root {
+      --ink: #23312d;
+      --muted: #61706a;
+      --paper: #fbfaf5;
+      --white: #ffffff;
+      --line: #d9ded6;
+      --green: #2f6f55;
+      --green-dark: #224c3b;
+      --gold: #d4a642;
+      --blue: #426f8f;
+      --rust: #a75a3b;
+      --soft-green: #e8f0e7;
+      --soft-blue: #e6eef3;
+      --shadow: 0 18px 45px rgba(35, 49, 45, 0.12);
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .newsletter {
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 560px;
+      padding: 34px 24px 84px;
+      color: var(--white);
+      background:
+        linear-gradient(rgba(24, 43, 38, 0.46), rgba(24, 43, 38, 0.66)),
+        url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=80") center / cover;
+    }
+
+    .hero-inner {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+    }
+
+    .topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 92px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.86rem;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .town-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+    }
+
+    .brand-logo {
+      width: 108px;
+      height: auto;
+      border-radius: 999px;
+      filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.18));
+    }
+
+    .issue-date {
+      padding: 8px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .hero-copy {
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #f4d782;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 720px;
+      margin-bottom: 18px;
+      font-size: 5.4rem;
+      line-height: 0.94;
+      letter-spacing: 0;
+    }
+
+    .hero-lead {
+      max-width: 650px;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.25rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 18px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      color: var(--green-dark);
+      background: #f2cc65;
+    }
+
+    .button.secondary {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.55);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      width: min(1120px, calc(100% - 36px));
+      margin: -54px auto 0;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.8fr);
+      gap: 18px;
+      align-items: stretch;
+      margin-bottom: 24px;
+    }
+
+    .panel,
+    .stat-panel,
+    .section,
+    .callout {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .panel {
+      padding: 34px;
+    }
+
+    .panel h2,
+    .section h2,
+    .callout h2 {
+      margin-bottom: 12px;
+      color: var(--green-dark);
+      font-size: 2rem;
+      line-height: 1.1;
+    }
+
+    .panel p:last-child,
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .stat-panel {
+      display: grid;
+      align-content: center;
+      gap: 16px;
+      padding: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .stat {
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .stat:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--rust);
+      font-size: 2.4rem;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 24px;
+      padding-bottom: 54px;
+    }
+
+    .section {
+      padding: 34px;
+    }
+
+    .section.accent-green {
+      border-top: 6px solid var(--green);
+    }
+
+    .section.accent-blue {
+      border-top: 6px solid var(--blue);
+    }
+
+    .section.accent-gold {
+      border-top: 6px solid var(--gold);
+    }
+
+    .section.accent-rust {
+      border-top: 6px solid var(--rust);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .mini-card {
+      min-height: 100%;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fcfcf8;
+    }
+
+    .mini-card h3 {
+      margin-bottom: 8px;
+      color: var(--green-dark);
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+
+    .plain-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .plain-list li {
+      position: relative;
+      padding-left: 24px;
+      color: var(--muted);
+    }
+
+    .plain-list li::before {
+      position: absolute;
+      left: 0;
+      top: 0.72em;
+      width: 9px;
+      height: 9px;
+      content: "";
+      border-radius: 50%;
+      background: var(--gold);
+      transform: translateY(-50%);
+    }
+
+    .highlight-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      overflow: hidden;
+      margin: 24px 0 0;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--line);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .highlight-strip div {
+      padding: 18px;
+      background: var(--soft-green);
+    }
+
+    .highlight-strip div:nth-child(2) {
+      background: var(--soft-blue);
+    }
+
+    .highlight-strip strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--green-dark);
+    }
+
+    .events {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .event {
+      padding: 18px;
+      border-left: 5px solid var(--blue);
+      border-radius: 7px;
+      background: var(--soft-blue);
+    }
+
+    .event strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--green-dark);
+    }
+
+    .callout {
+      padding: 34px;
+      color: var(--white);
+      background: var(--green-dark);
+    }
+
+    .callout h2 {
+      color: var(--white);
+    }
+
+    .callout p {
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .cta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .cta-grid a {
+      min-height: 82px;
+      padding: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 7px;
+      color: var(--white);
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .cta-grid a strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .closing {
+      padding: 34px 0 64px;
+      text-align: center;
+    }
+
+    .closing p {
+      width: min(760px, 100%);
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.18rem;
+    }
+
+    .footer-note {
+      padding: 20px 24px;
+      color: #f4efe5;
+      background: #1f2d2a;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.86rem;
+      text-align: center;
+    }
+
+    @media (max-width: 820px) {
+      .hero {
+        min-height: 520px;
+        padding-bottom: 74px;
+      }
+
+      .topline {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 58px;
+      }
+
+      .intro-grid,
+      .two-col,
+      .highlight-strip,
+      .events,
+      .cta-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .panel,
+      .section,
+      .callout {
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: 4.25rem;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .hero {
+        min-height: 590px;
+        padding: 24px 18px 72px;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .hero-lead {
+        font-size: 1.08rem;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .content {
+        width: min(100% - 24px, 1120px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="newsletter">
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="topline">
+          <div class="town-mark">
+            <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="34 23 492 284" role="img" aria-labelledby="logo-title logo-desc">
+              <title id="logo-title">Luseland and District Chamber of Commerce logo</title>
+              <desc id="logo-desc">Oval Chamber of Commerce logo with prairie-style green, gold, white, grey, and navy waves.</desc>
+              <ellipse cx="280" cy="165" rx="246" ry="142" fill="#ffffff" stroke="#263f68" stroke-width="6"/>
+              <text x="280" y="82" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#111111">Luseland &amp; District</text>
+              <clipPath id="logo-oval-clip">
+                <ellipse cx="280" cy="165" rx="232" ry="87"/>
+              </clipPath>
+              <g clip-path="url(#logo-oval-clip)">
+                <path d="M32 144 C118 102 186 96 260 118 C338 142 432 150 528 119 L528 150 C432 181 338 173 260 149 C186 127 118 133 32 175 Z" fill="#f3c94f" opacity="0.88"/>
+                <path d="M32 166 C128 112 205 136 278 151 C363 169 447 151 528 122 L528 158 C447 187 363 205 278 187 C205 172 128 148 32 202 Z" fill="#8bb94a" opacity="0.86"/>
+                <path d="M32 189 C123 145 210 151 286 171 C363 191 452 185 528 145 L528 182 C452 222 363 228 286 208 C210 188 123 182 32 226 Z" fill="#5ead5c" opacity="0.9"/>
+                <path d="M32 211 C125 170 207 180 286 202 C371 226 455 212 528 173 L528 220 C455 259 371 273 286 249 C207 227 125 217 32 258 Z" fill="#c8d7d3" opacity="0.76"/>
+                <path d="M32 222 C124 188 202 195 276 217 C365 244 445 235 528 201 L528 255 C445 289 365 298 276 271 C202 249 124 242 32 276 Z" fill="#263f68"/>
+                <path d="M32 201 C110 163 184 166 263 184 C348 203 441 202 528 171 L528 199 C441 230 348 231 263 212 C184 194 110 191 32 229 Z" fill="#ffffff" opacity="0.82"/>
+              </g>
+              <text x="280" y="279" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#111111">Chamber of Commerce</text>
+            </svg>
+            <span>Luseland & District Chamber of Commerce</span>
+          </div>
+          <div class="issue-date">October 2025 - April 2026</div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Chamber Notes</p>
+          <h1>A New Chapter for the Chamber</h1>
+          <p class="hero-lead">A community update on local business support, regional collaboration, Highway 31, tourism development, and the work now moving from ideas into action.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#opportunities">Get Involved</a>
+            <a class="button secondary" href="#highway-31">Read the Update</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <section class="intro-grid" aria-label="Newsletter introduction">
+        <article class="panel">
+          <h2>Building Momentum Together</h2>
+          <p>Since October 2025, the Luseland & District Chamber of Commerce has entered a new stage of growth and community involvement.</p>
+          <p>With the introduction of the Economic Development Officer role, the Chamber has been able to organize its work more effectively, move projects forward faster, strengthen communication with local businesses and partners, and begin turning long-standing ideas into active initiatives.</p>
+          <p>Today, the Chamber is not only an organization. It is becoming a practical tool for community development, business support, and regional collaboration.</p>
+        </article>
+
+        <aside class="stat-panel" aria-label="Newsletter highlights">
+          <div class="stat">
+            <strong>+9</strong>
+            <span>new Chamber members joined during this period</span>
+          </div>
+          <div class="stat">
+            <strong>5+</strong>
+            <span>municipal partners needed for the Highway 31 initiative</span>
+          </div>
+          <div class="stat">
+            <strong>2</strong>
+            <span>upcoming May community and Chamber events</span>
+          </div>
+        </aside>
+      </section>
+
+      <div class="main-grid">
+        <section class="section accent-green" id="highway-31">
+          <p class="eyebrow">Strategic Priority</p>
+          <h2>Highway 31: From Idea to Action</h2>
+          <p>One of the Chamber's most important strategic priorities has been the Highway 31 initiative. Over the past several months, the conversation has moved from "Should something be done?" to "How do we move this forward together?"</p>
+          <p>The Chamber was among the first to raise the issue of how the condition of Highway 31 affects local and regional life, including business logistics, road safety, tourism, investment, and the overall attractiveness of the area.</p>
+          <p>What began as a local concern has now grown into a broader regional conversation, with neighbouring municipalities recognizing Highway 31 as a shared challenge and confirming a willingness to collaborate.</p>
+
+          <div class="highlight-strip" aria-label="Highway 31 progress highlights">
+            <div><strong>Regional Support</strong><span>Municipalities and RMs across the region have expressed support and are actively engaging in a coordinated effort to move this initiative forward.</span></div>
+            <div><strong>Professional Planning</strong><span>The proposed initiative would focus on technical assessment and measurable data.</span></div>
+            <div><strong>Future Funding</strong><span>A stronger, data-based case can support future repair and improvement funding.</span></div>
+          </div>
+        </section>
+
+        <section class="section accent-blue">
+          <h2>Moving Toward a Professional Infrastructure Project</h2>
+          <p>The next step is the development of the Highway 31 Asset Management Initiative for the Kerrobert-Macklin corridor.</p>
+          <div class="two-col">
+            <div class="mini-card">
+              <h3>What It Would Include</h3>
+              <ul class="plain-list">
+                <li>technical road condition assessment</li>
+                <li>accurate and measurable data collection</li>
+                <li>a long-term repair and improvement plan</li>
+                <li>a stronger case for future funding</li>
+              </ul>
+            </div>
+            <div class="mini-card">
+              <h3>What Is Needed</h3>
+              <ul class="plain-list">
+                <li>participation from at least five municipalities</li>
+                <li>initial shared seed funding</li>
+                <li>regional cooperation and practical next steps</li>
+                <li>continued business and community support</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section accent-gold">
+          <h2>Data, Safety & Better Planning</h2>
+          <p>The Chamber has also supported the Town's initiative to install traffic monitoring equipment. A letter of support was submitted to SGI, highlighting the importance of accurate traffic data, identifying high-risk areas, and planning infrastructure improvements based on real numbers.</p>
+          <p>This is part of a larger shift from reacting to problems after they happen to planning ahead with reliable information.</p>
+          <div class="two-col">
+            <div class="mini-card">
+              <h3>For Business</h3>
+              <p>Better data can support improved logistics, safer transportation, stronger regional connections, and future economic growth.</p>
+            </div>
+            <div class="mini-card">
+              <h3>For Community</h3>
+              <p>Reliable traffic information helps identify risks, strengthen safety planning, and support decisions that reflect real local conditions.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section accent-rust">
+          <h2>Community & Business Engagement</h2>
+          <p>Alongside long-term strategic projects, the Chamber has also focused on being present in the everyday life of the community.</p>
+          <div class="two-col">
+            <div class="mini-card">
+              <h3>Community Events</h3>
+              <p>Participation in Santa Claus Day and the Treasure Hunt, in collaboration with the Luseland Development Committee, brought strong family engagement and helped increase visibility for local businesses.</p>
+            </div>
+            <div class="mini-card">
+              <h3>Safety Presentations</h3>
+              <p>The Chamber supported a Driving Safety Presentation for Grades 9-12 and a Business Safety Presentation focused on practical tools and real-life small-town business scenarios.</p>
+            </div>
+            <div class="mini-card">
+              <h3>Wellness Workshop</h3>
+              <p>A Health, Fitness & Nutrition workshop, delivered by a local expert, focused on wellness, productivity, and daily life.</p>
+            </div>
+            <div class="mini-card">
+              <h3>Workforce Workshop</h3>
+              <p>A workshop on Hiring Foreign Workers through the LMIA process addressed real workforce challenges with practical, case-based guidance.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section accent-green">
+          <h2>Welcome Package: More Than a Brochure</h2>
+          <p>Significant work has been completed on the Luseland Welcome Package, including collecting local business information, preparing materials about the community and its history, developing the structure of the package, and identifying the best ways to share it.</p>
+          <p>The Welcome Package is a tool to help new residents feel at home, a platform to showcase local businesses, and a way to tell Luseland's story with pride.</p>
+          <ul class="plain-list">
+            <li>planned distribution through the Town Office</li>
+            <li>planned availability at the local motel</li>
+            <li>online access through the website</li>
+          </ul>
+        </section>
+
+        <section class="section accent-blue">
+          <h2>Tourism Packages: Building Local Experiences</h2>
+          <p>Work has begun on developing tourism packages for Luseland. The idea is to bring local businesses together into ready-to-book experiences that may include accommodation, food, activities, local history, wellness, or photography.</p>
+          <div class="two-col">
+            <div class="mini-card">
+              <h3>Possible Experiences</h3>
+              <ul class="plain-list">
+                <li>museum and dining experience</li>
+                <li>country school tour</li>
+                <li>wellness experiences</li>
+                <li>photography sessions</li>
+              </ul>
+            </div>
+            <div class="mini-card">
+              <h3>Why It Matters</h3>
+              <p>This approach can create new customer traffic, additional revenue, and more collaboration between local businesses.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section accent-gold">
+          <h2>Chamber Growth & What's Next</h2>
+          <p>During this period, nine new members joined the Chamber. This growth reflects increasing trust, stronger interest, and a growing recognition of the value the Chamber can bring to local business and community development.</p>
+          <div class="events">
+            <div class="event"><strong>May 6</strong><span>Chamber Meeting</span></div>
+            <div class="event"><strong>May 12</strong><span>Bike Rodeo</span></div>
+          </div>
+        </section>
+
+        <section class="callout" id="opportunities">
+          <h2>Opportunities for Businesses</h2>
+          <p>Local businesses and community members are invited to get involved. These opportunities are about more than participation. They are a way to help shape the next stage of Luseland's growth.</p>
+          <div class="cta-grid">
+            <a href="#"><strong>Sponsor or Volunteer</strong><span>Add Google Sheet link</span></a>
+            <a href="#"><strong>Welcome Package</strong><span>Add business form link</span></a>
+            <a href="#"><strong>Tourism Packages</strong><span>Add interest form link</span></a>
+            <a href="#"><strong>Join the Chamber</strong><span>Add membership form link</span></a>
+          </div>
+        </section>
+      </div>
+
+      <section class="closing" aria-label="Final message">
+        <p>The Luseland & District Chamber of Commerce is building momentum. Today, the Chamber is a platform for action, a space for collaboration, and a driver of development. And this is only the beginning.</p>
+      </section>
+    </div>
+
+    <footer class="footer-note">
+      Chamber Notes | Luseland & District Chamber of Commerce | October 2025 - April 2026
+    </footer>
+  </main>
+</body>
+</html>
